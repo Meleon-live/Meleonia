@@ -1,2 +1,2 @@
 # Meleonia
-An impressive website for oracles
+An impressive website template for oracles

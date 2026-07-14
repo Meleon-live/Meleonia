@@ -626,9 +626,6 @@
   size(); seed(); requestAnimationFrame(loop);
   let rt; window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{size();seed();if(reduced)draw(0);},200)});
 })();
-What changed, in the language of your reference image: the connection reach is much longer, so the dots now weave a visible geometric web instead of occasional threads; the web lines are cream and roughly twice as present; the larger nodes glow with a soft halo like the lit points in the image; and there's a new layer of big, blurry bokeh orbs drifting slowly behind the web — those out-of-focus lights in the image's sky. The overall density is about half of your reference, as you asked, so the wordmark still breathes.
-Tuning knobs if you want to adjust after seeing it live: REACH=9800 controls the web (higher = more connected, try 13000 for denser; 7000 for sparser), the 0.15 right below it is line brightness, and n/14 sets how many bokeh orbs appear (n/8 for more). Commit, refresh, and tell me how the sky feels.
-
 /* ——— the living sky line ——— */
 (function(){
   const el=document.getElementById('skyline');
